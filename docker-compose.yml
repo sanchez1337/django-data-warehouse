@@ -1,0 +1,34 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      args:
+        DEPLOYMENT_MODE: "development"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/app
+      - dev-static-data:/vol/web
+    environment:
+      - DB_HOST=db
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PASS=postgres
+      - DEBUG=1
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13-alpine
+    volumes:
+      - dev-db-data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+volumes:
+    dev-db-data:
+    dev-static-data:
