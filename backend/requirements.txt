@@ -4,3 +4,4 @@ psycopg2>=2.9.9,<2.10
 drf-spectacular>=0.27.2,<0.28
 Pillow>=10.3.0,<10.4
 uwsgi==2.0.23
+django-simple-history==3.7.0
