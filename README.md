@@ -116,6 +116,12 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
+## Technology Stack
+
+* Python
+* Django
+* PostgreSQL
+* Docker
 
 
 <!-- ROADMAP -->
@@ -192,7 +198,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-shield]: https://img.shields.io/github/issues/sanchez1337/django-data-warehouse.svg?style=for-the-badge
 [issues-url]: https://github.com/sanchez1337/django-data-warehouse/issues
 [license-shield]: https://img.shields.io/github/license/sanchez1337/django-data-warehouse?style=for-the-badge
-[license-url]: https://github.com/sanchez1337/django-data-warehouse/main/LICENSE.txt
+[license-url]: https://github.com/sanchez1337/django-data-warehouse/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/mateusz-iskrzak
 [product-screenshot]: images/main.png
