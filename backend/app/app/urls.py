@@ -35,6 +35,7 @@ urlpatterns = [
         name='api-docs'
     ),
     path('api/user/', include('user.urls')),
+    path('warehouse/', include('warehouse.urls')),
 ]
 
 if settings.DEBUG:
